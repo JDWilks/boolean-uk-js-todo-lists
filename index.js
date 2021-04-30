@@ -46,7 +46,7 @@ for (let i = 0; i < users.length; i++) {
 
 // - Prompt the user for a user id
 
-const userid = prompt("Please enter your ID number")
+let userid = prompt("Please enter your ID number")
 
 // stored the users id in the variable userid ✅
 
@@ -57,6 +57,18 @@ for (let i = 0; i < users.length; i++) {
     userid === users[i]      
     console.log(userid.name)
     }
+
+// on the above code i'm trying to get the userid (stored from the prompt) to be equal to the 
+// users [i] when it goes through the loop then console log that name - not working ! ❌
+  
+for (let i = 0; i < users.length; i++) {
+    if(userid === users[i]){      
+    console.log(userid.name)
+    }
+}
+
+// tried using a if statement in the for loop - didn't work ❌ 😥
+
 
 
 // - all the todos title that belong to that user (Step 3)
